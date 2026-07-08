@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -6,7 +9,9 @@ function App() {
 
   return (
     <>
-      <h1>user management system</h1>
+      <Navbar/>
+      <Home/>
+      <Footer/>
     </>
   )
 }
