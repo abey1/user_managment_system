@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UserList = (users) => {
+const UserList = ({ users }) => {
   return (
     <div className='max-w-md mx-auto p-4 bg-white rounded-lg shadow-md'>
         <h2 className='text-2xl font-bold mb-4'>User List</h2>

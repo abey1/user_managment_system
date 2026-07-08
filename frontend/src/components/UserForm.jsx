@@ -1,8 +1,13 @@
 import React from 'react'
 
-const UserForm = () => {
+const UserForm = ({setUsers}) => {
+   
+    const handleSubmit = (e) => {
+        e.preventDefault()
+       
+    }
   return (
-        <form className='max-w-md mx-auto p-4 bg-white rounded-lg shadow-md'>
+        <form className='max-w-md mx-auto p-4 bg-white rounded-lg shadow-md' onSubmit={handleSubmit}>
             <h2 className='text-2xl font-bold mb-4'>Add User</h2>
             <div className='mb-4'>
                 <label htmlFor='name' className='block text-sm font-medium text-gray-700'>Name</label>
